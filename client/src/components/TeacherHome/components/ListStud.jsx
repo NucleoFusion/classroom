@@ -10,7 +10,9 @@ export default function ListStud() {
   useEffect(() => {
     const getUsers = async () => {
       const result = await axios.get(
-        `http://localhost:3000/get/students/${Cookies.get("id")}`
+        `https://classroom-server-iw5w.onrender.com/get/students/${Cookies.get(
+          "id"
+        )}`
       );
       setUserArr(result.data);
     };

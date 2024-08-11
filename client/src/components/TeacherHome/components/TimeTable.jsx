@@ -9,7 +9,9 @@ export default function TimeTable() {
   useEffect(() => {
     const getClass = async () => {
       const result = await axios.get(
-        `http://localhost:3000/get/timetable/${Cookies.get("id")}`
+        `https://classroom-server-iw5w.onrender.com/get/timetable/${Cookies.get(
+          "id"
+        )}`
       );
       if (result.data.message === "No Classroom") {
         alert("Not Part of a Classroom");

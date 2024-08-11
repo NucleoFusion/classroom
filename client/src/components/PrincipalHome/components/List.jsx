@@ -8,7 +8,9 @@ export default function List() {
 
   useEffect(() => {
     const getUsers = async () => {
-      const result = await axios.get("http://localhost:3000/get/users");
+      const result = await axios.get(
+        "https://classroom-server-iw5w.onrender.com/get/users"
+      );
       setUserArr(result.data);
     };
     getUsers();

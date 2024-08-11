@@ -37,7 +37,9 @@ export default function CreateClass() {
 
   useEffect(() => {
     const getTeachers = async () => {
-      const result = await axios.get("http://localhost:3000/get/teachers");
+      const result = await axios.get(
+        "https://classroom-server-iw5w.onrender.com/get/teachers"
+      );
       setTeachArr(result.data);
     };
     getTeachers();
@@ -59,11 +61,15 @@ export default function CreateClass() {
       teacher: teacher,
       name: name,
     };
-    await axios.post("http://localhost:3000/Principal/createClass", data, {
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-    });
+    await axios.post(
+      "https://classroom-server-iw5w.onrender.com/Principal/createClass",
+      data,
+      {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      }
+    );
 
     $(`${styles.createClass} form > button`).attr("disabled", "false");
   }

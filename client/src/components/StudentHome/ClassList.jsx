@@ -10,7 +10,9 @@ export default function ClassList() {
   useEffect(() => {
     const getUsers = async () => {
       const result = await axios.get(
-        `http://localhost:3000/get/classStudents/${Cookies.get("id")}`
+        `https://classroom-server-iw5w.onrender.com/get/classStudents/${Cookies.get(
+          "id"
+        )}`
       );
       if (result.data.message !== "No Classroom") {
         setUserArr(result.data);

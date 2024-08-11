@@ -22,7 +22,7 @@ export default function CreateAcc() {
     }
 
     const result = await axios.post(
-      "http://localhost:3000/Principal/createAcc",
+      "https://classroom-server-iw5w.onrender.com/Principal/createAcc",
       {
         email: email,
         password: password,

@@ -21,7 +21,7 @@ export default function LoginPage() {
     const password = $("input[name='password']").val();
 
     const result = await axios.post(
-      "http://localhost:3000/login",
+      "https://classroom-server-iw5w.onrender.com/login",
       {
         email: email,
         password: password,

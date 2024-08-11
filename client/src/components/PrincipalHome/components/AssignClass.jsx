@@ -9,9 +9,13 @@ export default function AssignClass() {
 
   useEffect(() => {
     const getData = async () => {
-      const userResult = await axios.get("http://localhost:3000/get/students");
+      const userResult = await axios.get(
+        "https://classroom-server-iw5w.onrender.com/get/students"
+      );
       setUserArr(userResult.data);
-      const classResult = await axios.get("http://localhost:3000/get/class");
+      const classResult = await axios.get(
+        "https://classroom-server-iw5w.onrender.com/get/class"
+      );
       setClassArr(classResult.data);
     };
     getData();
@@ -23,7 +27,7 @@ export default function AssignClass() {
     const classroom = $("select[name='class'] option:selected").text();
 
     axios.post(
-      "http://localhost:3000/assignClass",
+      "https://classroom-server-iw5w.onrender.com/assignClass",
       {
         student: student,
         classroom: classroom,

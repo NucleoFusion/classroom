@@ -23,7 +23,9 @@ export default function PrincipalHome() {
       navigate(`/${Cookies.get("role")}`);
     }
     const getData = async () => {
-      const userResult = await axios.get("http://localhost:3000/get/users");
+      const userResult = await axios.get(
+        "https://classroom-server-iw5w.onrender.com/get/users"
+      );
       setArrCont({
         ...arrCont,
         userArr: userResult.data,
@@ -46,7 +48,7 @@ export default function PrincipalHome() {
     }
 
     await axios.post(
-      "http://localhost:3000/changeName",
+      "https://classroom-server-iw5w.onrender.com/changeName",
       {
         name: Name,
         email: email,
@@ -68,7 +70,7 @@ export default function PrincipalHome() {
     }
 
     axios.post(
-      "http://localhost:3000/delete/byEmail",
+      "https://classroom-server-iw5w.onrender.com/delete/byEmail",
       { email: email },
       {
         headers: {
