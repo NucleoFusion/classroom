@@ -1,0 +1,18 @@
+.container {
+  width: 90vw;
+  height: 80vh;
+
+  margin-top: 10vh;
+  margin-left: 5vw;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 1vw;
+}
+
+.container div {
+  background-color: #55ad9b;
+  grid-row: span 2;
+}

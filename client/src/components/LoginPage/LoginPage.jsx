@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./LoginPage.module.css";
-import TextInput from "./components/TextInput";
+import TextInput from "../TextInput";
 import $ from "jquery";
 import Cookies from "js-cookie";
 import axios from "axios";
@@ -34,7 +34,8 @@ export default function LoginPage() {
     );
 
     if (result.data.message === "Authentication Success") {
-      Cookies.set("id", result.data.id);
+      console.log(result.data);
+      Cookies.set("id", result.data._id);
       Cookies.set("role", result.data.role);
       navigate(`/${Cookies.get("role")}`);
     } else if (result.data.message === "Failure") {

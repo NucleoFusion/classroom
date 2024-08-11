@@ -1,0 +1,148 @@
+.container {
+  width: 90vw;
+  height: 90vh;
+
+  margin-top: 5vh;
+  margin-left: 5vw;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 1vw;
+}
+
+.container div {
+  background-color: #55ad9b;
+}
+
+.createAcc {
+  padding: 1vw;
+}
+
+.createClass {
+}
+
+.list {
+  padding-top: 2vw;
+
+  overflow-y: scroll;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+form > select {
+  width: 30vw !important;
+
+  margin-left: 6vw;
+  height: 5vh;
+}
+
+form > h3 {
+  text-align: center;
+}
+
+form button {
+  width: 30%;
+  height: 5vh;
+
+  margin-left: 35%;
+
+  background-color: #f1f8e8 !important;
+
+  color: black !important;
+
+  border: none;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.createClass div,
+.createAcc div {
+  width: 30vw;
+
+  margin-left: 6vw;
+}
+
+.listRow {
+  width: 40vw;
+  height: 5vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  margin-left: 5%;
+}
+
+.listRow h5 {
+  text-align: center;
+
+  border: solid black 1px;
+
+  width: 10vw;
+}
+
+.editContainer {
+  width: 50vw;
+  height: 70vh;
+
+  margin-left: 25vw;
+  margin-top: 10vh;
+
+  z-index: 3;
+
+  position: fixed;
+
+  border: solid black 2px;
+
+  background-color: #55ad9b;
+}
+
+.opacityImp {
+  opacity: 1 !important;
+}
+
+.formContainer form div {
+  width: 30vw;
+  margin-left: 10vw;
+}
+
+.formContainer select {
+  margin-left: 10vw;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.buttons button {
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.assignClass {
+  padding: 1vw;
+}
+
+.assignClass > form {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  gap: 2vh;
+}
+
+form h4 {
+  text-align: center;
+}

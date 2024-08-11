@@ -1,5 +1,5 @@
 body {
-  background-color: #cbf1f5;
+  background-color: #95d2b3;
 
   display: grid;
   grid-template-columns: 100%;
@@ -9,4 +9,6 @@ body {
   height: 100vh;
 
   overflow-x: hidden;
+
+  color: #f1f8e8;
 }
